@@ -3,6 +3,12 @@
     "description": "Material Dashboard - Free Bootstrap Material Design Admin",
     "type": "project",
     "license": "MIT",
+    "scripts": {
+        "post-install-cmd": [
+            "php artisan clear-compiled",
+            "chmod -R 777 examples/"
+        ]
+    },
     "authors": [
         {
             "name": "Creative Tim",
